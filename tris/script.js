@@ -1,4 +1,6 @@
 const cells = document.querySelectorAll('.cell');
+const player = document.querySelector('#player');
+player.innerText = 'O'
 
 let turn = 0;
 
@@ -21,6 +23,7 @@ for(let i = 0; i < cells.length; i++){
     } else {
       sign = 'O'
     }
+    player.innerText = sign == 'X' ? 'O' : 'X'
     cell.innerText = sign;
     cellSigns[i] = sign;
 
