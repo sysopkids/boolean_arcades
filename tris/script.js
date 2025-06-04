@@ -68,4 +68,13 @@ function checkvictory(){
 
   }
   return false;
+
+
 }
+
+
+// Tasto rigioca 
+const restartButton = document.getElementById('restart');
+restartButton.addEventListener('click', function(){
+window.location.reload();
+   })

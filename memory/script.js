@@ -64,3 +64,10 @@ function checkForWin() {
         showAlert('Hai vinto!');
     }
 }
+
+
+// Tasto rigioca 
+const restartButton = document.getElementById('restart');
+restartButton.addEventListener('click', function(){
+window.location.reload();
+   })
