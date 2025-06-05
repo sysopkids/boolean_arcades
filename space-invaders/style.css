@@ -4,8 +4,9 @@
 }
 
 #grid {
-    width: calc(var(--cell-size) * var(--grid-size));
-    height: calc(var(--cell-size) * var(--grid-size));
+    width: calc(var(--cell-size) * var(--grid-size) + 4px);
+    height: calc(var(--cell-size) * var(--grid-size) + 4px);
+    border: 2px solid white;
     display: flex;
     flex-wrap: wrap;
 }
@@ -17,6 +18,24 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.board{
+    align-items: center;
+    margin: 80px auto;
+
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+}
+
+
+button{
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  padding: 10px 15px;
 }
 
 .alien {
